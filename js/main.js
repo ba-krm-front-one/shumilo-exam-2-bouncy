@@ -5,15 +5,14 @@ function useIsotope(event) {
     // init Isotope
     let isotopeGrid = new Isotope( '#portfolio-imgs-inner', {
         itemSelector: '.item',
-        percentPosition: true,
         masonry: {
             // use element for option
             columnWidth: '.item',
             itemSelector: '.item',
-            transitionDuration: '1s',
+            transitionDuration: '0.5s',
             gutter: 8,
             isFitWidth: true,
-            horizontalOrder: true
+            horizontalOrder: true,
         }
     });
 

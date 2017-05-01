@@ -36,7 +36,9 @@
       border: 2px solid transparent; }
       .header .nav__menu-item-link:hover {
         border: 2px solid #fff;
-        border-radius: 16px; }
+        border-radius: 16px;
+        transform: scale(1.07);
+        transition: all 1s; }
   @media all and (max-width: 700px) {
     .header .nav__menu-item {
       margin-right: 0;
@@ -77,7 +79,9 @@
     padding-top: 14px;
     background-color: #19bd9a; }
     .header__img-link:hover {
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); }
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+      transform: scale(1.07);
+      transition: all 0.5s; }
     .header__img-link img {
       width: 13px;
       display: block;
@@ -93,7 +97,7 @@
   padding-left: 9.1%;
   padding-right: 9.1%;
   width: 100%; }
-  .portfolio__title, .team__title, .testimonials__title {
+  .portfolio__title, .team__title, .testimonials__title, .contact-us__title {
     color: #333b46;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 20px;
@@ -101,7 +105,7 @@
     width: 188px;
     letter-spacing: 4px;
     margin: 0 auto; }
-    .portfolio__title-text, .team__title-text, .testimonials__title-text {
+    .portfolio__title-text, .team__title-text, .testimonials__title-text, .contact-us__title-text {
       width: 457px;
       color: #81868e;
       font-family: "Open Sans", sans-serif;
@@ -139,10 +143,10 @@
       border-top: 2px solid #19bd9a;
       margin: 9px auto 0 auto; }
   .portfolio #portfolio-imgs {
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 0 auto; }
     .portfolio #portfolio-imgs-inner {
-      max-width: 1300px;
+      max-width: 1100px;
       margin: 0 auto; }
       .portfolio #portfolio-imgs-inner .item {
         width: 270px;
@@ -159,7 +163,10 @@
   .team__carousel-worker {
     width: 1030px;
     height: 365px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    outline: none; }
+    .team__carousel-worker:hover {
+      cursor: pointer; }
     .team__carousel-worker .worker__photo {
       float: left; }
     .team__carousel-worker .worker__info {
@@ -222,6 +229,7 @@
     .contact .contact-us-btn:hover {
       box-shadow: 0 0 10px rgba(225, 225, 225, 0.7);
       transform: scale(1.05);
+      transition: all 0.3s;
       cursor: pointer; }
 
 .testimonials {
@@ -232,28 +240,55 @@
     max-width: 1170px;
     min-height: 315px;
     background: #fff; }
+    .testimonials .comments__slide {
+      padding: 50px 95px 0 95px;
+      outline: none;
+      cursor: pointer; }
+      .testimonials .comments__slide img {
+        display: block;
+        float: left;
+        width: 135px;
+        height: 135px; }
+      .testimonials .comments__slide-info {
+        vertical-align: top;
+        padding-top: 10px;
+        width: 77%;
+        float: right; }
+        .testimonials .comments__slide-info p {
+          color: #81868e;
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px;
+          word-wrap: break-word;
+          width: 100%; }
+        .testimonials .comments__slide-info h3 {
+          margin-top: 15px;
+          color: #19bd9a;
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          width: 100%; }
+        .testimonials .comments__slide-info h4 {
+          margin-top: 5px;
+          color: #464646;
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          width: 100%; }
+  .testimonials .slick-dots {
+    position: inherit; }
+  @media all and (max-width: 950px) {
+    .testimonials .comments__slide img {
+      margin: 0 auto;
+      float: none; }
     .testimonials .comments__slide-info {
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 10px;
-      margin-left: 70px;
-      max-width: 755px; }
-      .testimonials .comments__slide-info p {
-        color: #81868e;
-        font-family: "Open Sans", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-        word-wrap: break-word; }
-      .testimonials .comments__slide-info h3 {
-        margin-top: 15px;
-        color: #19bd9a;
-        font-family: "Open Sans", sans-serif;
-        font-size: 16px;
-        font-weight: 700; }
-      .testimonials .comments__slide-info h4 {
-        margin-top: 5px;
-        color: #464646;
-        font-family: "Open Sans", sans-serif;
-        font-size: 14px;
-        font-weight: 400; }
+      float: none;
+      text-align: center;
+      margin: 0 auto; } }
+
+.contact-us {
+  width: 100%;
+  padding-top: 50px; }
+  .contact-us__title {
+    width: 146px; }
