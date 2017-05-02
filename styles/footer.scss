@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 70px;
+  &__info {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    img {
+      margin-bottom: 20px;
+    }
+    p {
+      @include font-style (#81868e, "Open Sans", 14px, 400);
+      margin-bottom: 35px;
+    }
+    &-links {
+      width: 175px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      a:hover {
+        transform: scale(1.2);
+        transition: all 0.5s;
+      }
+    }
+  }
+}

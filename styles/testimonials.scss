@@ -1,0 +1,61 @@
+.testimonials {
+  min-height: 650px;
+  background: #f3f3f3;
+  padding: 75px 6.9% 0 6.9%;
+  &__title {
+    @extend .portfolio__title;
+  }
+  &__title-text {
+    @extend .portfolio__title-text;
+  }
+  .comments {
+    max-width: 1170px;
+    min-height: 315px;
+    background: #fff;
+    &__slide {
+      padding: 50px 95px 0 95px;
+      outline: none;
+      cursor: pointer;
+      img {
+        display: block;
+        float: left;
+        width: 135px;
+        height: 135px;
+      }
+      &-info {
+        vertical-align: top;
+        padding-top: 10px;
+        width: 77%;
+        float: right;
+        p {
+          @include font-style (#81868e, "Open Sans", 16px, 400);
+          line-height: 28px;
+          word-wrap: break-word;
+          width: 100%;
+        }
+        h3 {
+          @include font-style (#19bd9a, "Open Sans", 16px, 700);
+          margin-top: 15px;
+        }
+        h4 {
+          @include font-style (#464646, "Open Sans", 14px, 400);
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    position: inherit;
+  }
+  @media all and (max-width: 950px) {
+    .comments__slide img {
+      margin: 0 auto;
+      float: none;
+    }
+    .comments__slide-info {
+      float: none;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
