@@ -53,6 +53,8 @@ $(document).ready(function(){
     $('.comments').slick({
         arrows: false,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
     });
 });
 /* END SLICK SLIDER */
@@ -63,7 +65,6 @@ function initMap() {
     map = new google.maps.Map(document.querySelector('.contact-us__map'), {
         center: {lat: 48.734454, lng: 37.579603},
         zoom: 17,
-        disableDefaultUI: true
     });
 
     var image = 'imgs/beetroot-marker.png';
@@ -88,7 +89,7 @@ $(document).ready(function(){
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
-        }, 1000);
+        }, 1800);
         e.preventDefault();
     });
     return false;
