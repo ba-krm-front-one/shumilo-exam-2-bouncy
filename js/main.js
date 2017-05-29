@@ -10,7 +10,6 @@ function useIsotope(event) {
             itemSelector: '.item',
             transitionDuration: '0.5s',
             gutter: 8,
-            isFitWidth: true,
             horizontalOrder: true,
         }
     });
@@ -65,6 +64,7 @@ function initMap() {
     map = new google.maps.Map(document.querySelector('.contact-us__map'), {
         center: {lat: 48.734454, lng: 37.579603},
         zoom: 17,
+        scrollwheel: false
     });
 
     var image = 'imgs/beetroot-marker.png';

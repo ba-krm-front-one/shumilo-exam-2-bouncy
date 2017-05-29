@@ -1,7 +1,7 @@
 .testimonials {
   min-height: 650px;
   background: #f3f3f3;
-  padding: 75px 6.9% 0 6.9%;
+  padding: 75px 0 0 0;
   &__title {
     @extend .portfolio__title;
   }
@@ -10,10 +10,12 @@
   }
   .comments {
     max-width: 1170px;
+    margin: 0 auto;
     min-height: 315px;
     background: #fff;
     &__slide {
       padding: 50px 95px 0 95px;
+      width: 100%;
       outline: none;
       cursor: pointer;
       img {
